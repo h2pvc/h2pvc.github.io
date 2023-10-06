@@ -141,6 +141,107 @@ CONVERSION WITH GLOBAL STYLE TOKENS</h1>
   </section>
 <!--End paper poster -->
 
+    <section>
+            <img src="graphics/overview.png" alt="Overview of the proposed framework" width="25%">
+            <h2>Demoing Severity Preservation of Speech Samples</h2>
+
+            The following demo shows the system's severity preservation ability. Note how the PPG remains very intelligible even with the highest severity samples and how voice quality aspectsof the pathology are more present with the PPG-GST samples.
+            Unfortunately, due to sensitivity of the medical data, we are unable to share the source audio samples.
+            <details>
+    <summary>Click to reveal transcription</summary>
+                Een vogelkooitje wegpakte and daarmee naar de deur liep.
+</details>
+<table id="audioTable" style="border-collapse: collapse; width: auto; margin: auto;">
+  <thead>
+    <tr>
+      <th style="text-align: center;">Source Speaker</th>
+      <th style="text-align: center;">PPG</th>
+      <th style="text-align: center;">PPG-GST</th>
+      <th style="text-align: center;">Target Speaker</th>
+    </tr>
+  </thead>
+</table>
+<script>
+// Define the speaker names
+var speakers = ["PGAF_T1", "PHNF_T2", "PIIM_T1", "RBEM_T3", "RCIM_T3", "RMRM_T3", "RQOF_T3"];
+
+// Get a reference to the table
+var table = document.getElementById("audioTable");
+
+// Iterate over each speaker
+speakers.forEach(function(speaker) {
+    // Create a new row and cells
+    var row = document.createElement("tr");
+    var cell1 = document.createElement("td");
+    var cell2 = document.createElement("td");
+    var cell3 = document.createElement("td");
+    var cell4 = document.createElement("td");
+
+    // Set the content of the cells
+    cell1.textContent = speaker;
+    cell2.innerHTML = `<audio controls><source src="audio_stimuli/ppg/${speaker}/vl_norm/${speaker}_86.wav" type="audio/mpeg">Your browser does not support the audio element.</audio>`;
+    cell3.innerHTML = `<audio controls><source src="audio_stimuli/gst_enhanced/${speaker}/vl_norm/${speaker}_86.wav" type="audio/mpeg">Your browser does not support the audio element.</audio>`;
+    cell4.innerHTML = `<audio controls><source src="audio_stimuli/rdh_vl_gt/vl14995.wav" type="audio/mpeg">Your browser does not support the audio element.</audio>`;
+
+    // Add the cells to the row
+    row.appendChild(cell1);
+    row.appendChild(cell2);
+    row.appendChild(cell3);
+    row.appendChild(cell4);
+
+    // Add the row to the table
+    table.appendChild(row);
+});
+</script>
+            <details>
+
+         <summary>Click to reveal transcription</summary>
+                Snel sprong hij erheen en raakte het kooitje en de oude vrouw aan met de bloem.
+</details>
+<table id="audioTable2" style="border-collapse: collapse; width: auto; margin: auto;">
+  <thead>
+    <tr>
+      <th style="text-align: center;">Source Speaker</th>
+      <th style="text-align: center;">PPG</th>
+      <th style="text-align: center;">PPG-GST</th>
+      <th style="text-align: center;">Target Speaker</th>
+    </tr>
+  </thead>
+</table>
+<script>
+// Define the speaker names
+var speakers = ["PGAF_T1", "PHNF_T2", "PIIM_T1", "RBEM_T3", "RCIM_T3", "RMRM_T3", "RQOF_T3"];
+
+// Get a reference to the table
+var table = document.getElementById("audioTable2");
+
+// Iterate over each speaker
+speakers.forEach(function(speaker) {
+    // Create a new row and cells
+    var row = document.createElement("tr");
+    var cell1 = document.createElement("td");
+    var cell2 = document.createElement("td");
+    var cell3 = document.createElement("td");
+    var cell4 = document.createElement("td");
+
+    // Set the content of the cells
+    cell1.textContent = speaker;
+    cell2.innerHTML = `<audio controls><source src="audio_stimuli/ppg/${speaker}/vl_norm/${speaker}_87.wav" type="audio/mpeg">Your browser does not support the audio element.</audio>`;
+    cell3.innerHTML = `<audio controls><source src="audio_stimuli/gst_enhanced/${speaker}/vl_norm/${speaker}_87.wav" type="audio/mpeg">Your browser does not support the audio element.</audio>`;
+    cell4.innerHTML = `<audio controls><source src="audio_stimuli/rdh_vl_gt/vl14995.wav" type="audio/mpeg">Your browser does not support the audio element.</audio>`;
+
+    // Add the cells to the row
+    row.appendChild(cell1);
+    row.appendChild(cell2);
+    row.appendChild(cell3);
+    row.appendChild(cell4);
+
+    // Add the row to the table
+    table.appendChild(row);
+});
+</script>
+        </section>
+
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
